@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E55EED825B4182E000C4D08 /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55EED725B4182E000C4D08 /* TopCollectionViewCell.swift */; };
+		4E55EEDD25B42895000C4D08 /* CollectionViewBrandCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55EEDC25B42895000C4D08 /* CollectionViewBrandCells.swift */; };
 		5FF480F625B3BF8400FFFF6B /* BrandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF480F425B3BF8400FFFF6B /* BrandCollectionViewCell.swift */; };
 		5FF480F725B3BF8400FFFF6B /* BrandCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF480F525B3BF8400FFFF6B /* BrandCollectionViewCell.xib */; };
 		5FFC307A25B35B5C00C85F8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC307925B35B5C00C85F8A /* AppDelegate.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E55EED725B4182E000C4D08 /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E55EEDC25B42895000C4D08 /* CollectionViewBrandCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewBrandCells.swift; sourceTree = "<group>"; };
 		5FF480F425B3BF8400FFFF6B /* BrandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCollectionViewCell.swift; sourceTree = "<group>"; };
 		5FF480F525B3BF8400FFFF6B /* BrandCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandCollectionViewCell.xib; sourceTree = "<group>"; };
 		5FFC307625B35B5C00C85F8A /* RenterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +115,8 @@
 				5FFC307B25B35B5C00C85F8A /* SceneDelegate.swift */,
 				5FFC307D25B35B5C00C85F8A /* ViewController.swift */,
 				5FFC307F25B35B5C00C85F8A /* Main.storyboard */,
+				4E55EEDC25B42895000C4D08 /* CollectionViewBrandCells.swift */,
+				4E55EED725B4182E000C4D08 /* TopCollectionViewCell.swift */,
 				5FF480F425B3BF8400FFFF6B /* BrandCollectionViewCell.swift */,
 				5FF480F525B3BF8400FFFF6B /* BrandCollectionViewCell.xib */,
 				5FFC30BC25B36CFA00C85F8A /* CollectionViewCell.swift */,
@@ -272,6 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E55EED825B4182E000C4D08 /* TopCollectionViewCell.swift in Sources */,
+				4E55EEDD25B42895000C4D08 /* CollectionViewBrandCells.swift in Sources */,
 				5FFC307E25B35B5C00C85F8A /* ViewController.swift in Sources */,
 				5FF480F625B3BF8400FFFF6B /* BrandCollectionViewCell.swift in Sources */,
 				5FFC307A25B35B5C00C85F8A /* AppDelegate.swift in Sources */,

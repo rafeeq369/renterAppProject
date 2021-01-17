@@ -9,9 +9,12 @@ import UIKit
 
 class BrandCollectionViewCell: UICollectionViewCell {
 
+  
+    @IBOutlet weak var brandBtns: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
 }

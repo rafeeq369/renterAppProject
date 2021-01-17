@@ -8,33 +8,55 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-  
+    let data = ["Apple", "Oppo", "Poco", "Samsung", "Surface"]
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var HomeBanner: UIView!
+    @IBOutlet weak var CVTitles: UICollectionView!
+    @IBOutlet weak var CVBrands: UICollectionView!
+    @IBOutlet weak var BrandBtns: UIButton!
     
     
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "viewCell")
         self.collectionView.register(UINib(nibName: "BrandCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "brandCell")
         
         self.HomeBanner.layer.cornerRadius = self.HomeBanner.frame.width/19.5
         self.HomeBanner.clipsToBounds = true
+        
     }
     
 
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+            return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        if collectionView == CVTitles {
+            return 8
+        }
+        else if collectionView == CVBrands {
+            return 5
+        }
+        else{
+            return 6
+        }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCell", for: indexPath as IndexPath) as! CollectionViewCell
-        return cell
+        if collectionView == CVTitles {
+            let cellTop  = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTop", for: indexPath as IndexPath) as! TopCollectionViewCell
+            return cellTop
+        }
+        else if collectionView == CVBrands {
+            let BrandCell  = collectionView.dequeueReusableCell(withReuseIdentifier: "brandCell", for: indexPath as IndexPath) as! BrandCollectionViewCell
+            BrandBtns?.setTitle("Button Title", for: [])
+            return BrandCell
+        }
+        else{
+            let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCell", for: indexPath as IndexPath) as! CollectionViewCell
+            return cell
+        }
     }
     
 }
