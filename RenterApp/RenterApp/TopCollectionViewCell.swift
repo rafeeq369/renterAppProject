@@ -9,4 +9,5 @@ import UIKit
 
 class TopCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var topCVLbl: UILabel!
 }
